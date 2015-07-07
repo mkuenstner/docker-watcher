@@ -1,0 +1,16 @@
+cluster.name: watcher
+node.name: watcher
+index.number_of_shards: 1
+index.number_of_replicas: 0
+discovery.zen.ping.multicast.enabled: false
+watcher.actions.email.service.account:
+    work:
+        profile: standard
+        email_defaults:
+            from: root@localhost
+        smtp:
+            auth: false
+            starttls.enable: false
+            host: 127.0.0.1
+            port: 25
+            user: root@localhost
